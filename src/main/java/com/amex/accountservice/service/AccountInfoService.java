@@ -31,7 +31,7 @@ public class AccountInfoService {
      * @param accountNumber
      * @return
      */
-    public Account get(Long accountNumber) {
+    public Optional<Account> get(Long accountNumber) {
         
         Account accnt=new Account();
         Optional<AccountEntity> accntObj=accountRepository.findById(accountNumber);
@@ -42,7 +42,7 @@ public class AccountInfoService {
             accnt.setAddress(addr);
             accnt.setTelephoneNumber(item.getTelephoneNumber());            
         });
-        return accnt;
+        return Optional.of(accnt);
     }
     
     /**
