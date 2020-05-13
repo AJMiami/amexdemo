@@ -22,12 +22,13 @@
 	
 	
 	Note: 
-	Data is stored in memory, Data.sql file in the resource folder is responsible for creating and hydrating the table.
-	Why not use the same object as VO and enity bean: That would partially give away the table structure in the DB, hence a bad practice.
-	DB deisgn: Per MDM , Address is considered a sperate table, DB table is purely for demo purpose
+	1. Data is stored in memory, Data.sql file in the resource folder is responsible for creating and hydrating the table.
+	2. Why not use the same object as VO and enity bean: That would partially give away the table structure in the DB, hence a bad practice.
+	3. DB deisgn: Per MDM , Address is considered a sperate table, DB table is purely for demo purpose
 
 	What is out of scope?
 	1. Logging mechanism [AOP]
 	2. Custom exception  [AOP]
 	3. Security
+	4. Adding Basecontroller to handle HTTP response status based on request method and return types
 	 
