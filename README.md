@@ -3,10 +3,10 @@
  A Spring boot application with 2 apis
  
  1. Get account information by passing account number, API should produce a JSON with Telephone Number and Address
- 	eg: localhost:8080/accountservices/123456 | method= Get | COntent-type= application/json
+ 	eg: localhost:8080/accountInfo/123456 | method= Get | COntent-type= application/json
  
  2. End point to save the information , data again contains telephone number and Address
- 	eg: localhost:8080/accountservices/ | metho=post |content-type=application/json
+ 	eg: localhost:8080/accountInfo/ | metho=post |content-type=application/json
  	payload:
  	
  	{
